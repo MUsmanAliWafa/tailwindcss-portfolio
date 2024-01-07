@@ -4,19 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Tailwindcss</title>
-    <link rel="stylesheet" href="dist/css/output.css">
+    <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body>
-
     <!-- hero section stard -->
     <section id="home" class="pt-36">
       <div class="container">
-        <div class="flex flex-wrap ">
-          <div class="w-full self-center px-4 ">
-            <h1 class="text-base font-semibold text-teal-500">Hallo semua 👋,Saya Usman</h1>
-            <h2>unworker | search work</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, distinctio!
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4">
+            <h1 class="text-base font-semibold text-primary">
+              Hallo semua 👋,Saya
+              <span class="block font-bold text-dark text-4xl mt-1">Usman</span>
+            </h1>
+            <h2 class="font-medium text-slate-500 texxt-lg mb-5">
+              unworker | search work
+            </h2>
+            <p class="font-medium text-slate-400 mb-10 leading-relaxed">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              <span class="text-dark font-bold">Consectetur, distinctio!</span>
             </p>
+            <a
+              href=""
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-85 transition duration-300 ease-in-out"
+              >Contact Me</a
+            >
+          </div>
+
+          <div class="w-full self-end px-4">
+            <div class="mt-10 relative">
+              <img
+                src="dist/img/man.png"
+                alt="avatar"
+                class="max-w-full mx-auto" />
+              <span class="absolute -button-20 -z-10 left-1/2 -translate-x-1">
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#14b8a6"
+                    d="M30.7,-32.5C43.9,-25.5,61.5,-19.7,70.5,-6.8C79.5,6.2,79.9,26.3,67.1,29.7C54.3,33.2,28.4,20,11.4,22.3C-5.7,24.7,-13.8,42.5,-23.4,46.7C-33,50.8,-44.1,41.3,-47.6,30C-51.1,18.7,-47,5.6,-42.3,-5.1C-37.6,-15.7,-32.2,-23.8,-25,-31.8C-17.9,-39.9,-8.9,-47.8,-0.1,-47.7C8.7,-47.6,17.5,-39.4,30.7,-32.5Z"
+                    transform="translate(100 100)" />
+                </svg>
+              </span>
+            </div>
+
           </div>
         </div>
       </div>
