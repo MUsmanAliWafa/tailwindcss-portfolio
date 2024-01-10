@@ -42,7 +42,17 @@ const html=document.querySelector('html');
 darkMode.addEventListener('click',function(){
   if(darkMode.checked){
     html.classList.add('dark');
+    localStorage.theme='dark';
   }else{
     html.classList.remove('dark');
+    localStorage.theme='light';
   }
 });
+
+// pindahkan posisi toggle sesuai mode
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  darkMode.checked=true;
+} else {
+  darkMode.checked=false;
+  
+}
