@@ -54,5 +54,10 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   darkMode.checked=true;
 } else {
   darkMode.checked=false;
-  
-}
+};
+
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.documentElement.classList.add('dark');
+} else {
+  document.documentElement.classList.remove('dark');
+};
